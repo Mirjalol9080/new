@@ -24,6 +24,18 @@
                 </div>
             </div>
 
+            <div class="modal-menu">
+                <div class="modal-bg"></div>
+                <div class="modal-panel__menu">
+                    <div class="modal-top">
+                        <h3 class="modal-title">Menu</h3>
+                        <button class="modal-button__close">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(26, 26, 26);transform: msFilter"><path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
         <!-- MODAL - END -->
 
         <header class="header">
@@ -33,12 +45,17 @@
                         <img src="./img/logo/Texnobozor.svg" alt="">
                     </a>
                     <form class="header-search">
-                        <div class="header-top__slect">
-                            <h3 class="header-top__select-title">Barcha kategoriyalar</h3>
-                            <div class="header-top__sc-icon">
-                                <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M6.99999 5.17198L11.95 0.221985L13.364 1.63598L6.99999 7.99998L0.635986 1.63598L2.04999 0.221985L6.99999 5.17198Z" fill="#323232" />
-                                </svg>
+                        <div class="header-top__slect-item">
+                            <div class="header-top__slect">
+                                <h3 class="header-top__select-title">Barcha kategoriyalar</h3>
+                                <div class="header-top__sc-icon">
+                                    <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.99999 5.17198L11.95 0.221985L13.364 1.63598L6.99999 7.99998L0.635986 1.63598L2.04999 0.221985L6.99999 5.17198Z" fill="#323232" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="header-top__slect-bottom">
+                                <p>ochldi</p>
                             </div>
                         </div>
                         <input type="text" class="header-top__input" placeholder="Noutbooklar, telefonlar, barchasini qidiring">
@@ -127,8 +144,6 @@
         </header>
 
         <main class="main">
-
-            
 
             <!-- BANNER - START -->
 
@@ -479,6 +494,7 @@
             <!-- SEEN - END -->
 
         </main>
+        
 
         <footer class="footer">
             <div class="container">
@@ -557,7 +573,9 @@
                 </div>
             </div>
         </footer>
+        <h1 class="fixd">Live User Count: <span id="user-count">0</span></h1>
     </div>
-    <script src="./app.js"></script>
+    <script src="ser.js"></script>
+    <script src="./app.js"></script>   
 </body>
 </html>

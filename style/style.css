@@ -45,6 +45,13 @@ input {
     font-weight: normal;
 }
 
+.fixd{
+    position: fixed;
+    bottom: 0;
+    right: 10px;
+    font-size: 20px;
+}
+
 :root {
     --font-family: "Inter", sans-serif;
 }
@@ -62,7 +69,6 @@ input {
     left: 0;
     width: 100%;
     height: 100%;
-
     z-index: 100;
     opacity: 0;
     visibility: hidden;
@@ -150,7 +156,60 @@ input {
     line-height: 120%;
 }
 
+.modal-menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s ease-in-out;
+}
 
+.modal-menu.open{
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-menu.open .modal-bg {
+    visibility: visible;
+}
+
+.modal-panel__menu{
+    width: 300px;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    right: -100px;
+    transition: all 0.3s ease-in-out;
+    padding: 5px 15px;
+}
+
+.modal-menu.open .modal-panel__menu{
+    right: 0;
+}
+
+.modal-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.modal-button__close{
+    border-radius: 8px;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-button__close:hover path{
+    fill: #1b99e0;
+}
 
 /* MODAL - END */
 
@@ -190,6 +249,35 @@ input {
     column-gap: 20px;
     background-color: white;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.header-top__slect:hover{
+    background-color: #1b98e05b;
+}
+
+.header-top__slect-bottom{
+    visibility: hidden;
+    height: 0px;
+    width: 100%;
+    transition: all 0.4s ease-in-out;
+    position: absolute;
+    z-index: 10000;
+    top: 65px;
+    left: 0;
+}
+
+.header-top__slect-bottom.active{
+    visibility: visible;
+    overflow: hidden;
+    height: auto;
+    width: 100%;
+    height: 600px;
+    background-color: #333333;
+}
+
+.header-top__sc-icon{
+    transition: all 0.3s ease-in-out;
 }
 
 .header-top__select-title {
@@ -888,8 +976,6 @@ input {
 }
 
 /* CARD - START */
-
-
 
 
 
