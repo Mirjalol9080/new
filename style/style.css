@@ -45,13 +45,6 @@ input {
     font-weight: normal;
 }
 
-.fixd{
-    position: fixed;
-    bottom: 0;
-    right: 10px;
-    font-size: 20px;
-}
-
 :root {
     --font-family: "Inter", sans-serif;
 }
