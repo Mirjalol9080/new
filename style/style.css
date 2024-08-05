@@ -297,12 +297,14 @@ input {
 
 .header-top__slect-bottom{
     padding: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 .header-top__slect-bottom-main{
     display: flex;
     align-items: center;
-    column-gap: 85px;
+    column-gap: 140px;
 }
 
 .header-top__slect-bottom-card{
