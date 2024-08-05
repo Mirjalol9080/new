@@ -374,7 +374,7 @@ input {
 .header-right {
     display: flex;
     align-items: center;
-    column-gap: 24px;
+    column-gap: 20px;
 }
 
 .hader-right__vs {
@@ -393,14 +393,20 @@ input {
 }
 
 .header-top__card {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
+    background-color: #1B99E0;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 3px;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
+}
+
+.header-top__card path{
+    fill: white;
 }
 
 .header-top__card:hover {
