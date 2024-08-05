@@ -10,6 +10,7 @@ const modalButtonclose = document.querySelector('.modal-button__close');
 
 headerButtonLogin.addEventListener('click', function(){
     modal.classList.add('open')
+    headerTopSlectBottom.classList.remove('active')
     document.body.style.overflow = 'hidden'
 })
 
