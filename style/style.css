@@ -307,6 +307,15 @@ input {
     column-gap: 140px;
 }
 
+.header-top__slect-bottom-main{
+    display: none;
+}
+
+.header-top__slect-bottom.active .header-top__slect-bottom-main{
+    display: block;
+    display: flex;
+}
+
 .header-top__slect-bottom-card{
     display: flex;
     flex-direction: column;
@@ -337,6 +346,7 @@ input {
     scale: 1.3;
     color: #1b99e0;
 }
+
 
 .header-top__select-title {
     font-family: var(--font-family);
