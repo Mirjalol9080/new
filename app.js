@@ -7,10 +7,12 @@ const headerTopScIcon = document.querySelector('.header-top__sc-icon');
 const headerButtonMobile = document.querySelector('.header-button__mobile');
 const modalMenu = document.querySelector('.modal-menu');
 const modalButtonclose = document.querySelector('.modal-button__close');
+const bacgrountFilter = document.querySelector('.bacgrount-filter');
 
 headerButtonLogin.addEventListener('click', function(){
     modal.classList.add('open')
     headerTopSlectBottom.classList.remove('active')
+    bacgrountFilter.classList.remove('open')
     document.body.style.overflow = 'hidden'
 })
 
@@ -21,6 +23,7 @@ modalBg.addEventListener('click', function(){
 
 headerTopSlect.addEventListener('click', function(){
     headerTopSlectBottom.classList.toggle('active')
+    bacgrountFilter.classList.toggle('open')
 
     
     
