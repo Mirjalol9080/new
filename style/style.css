@@ -1552,4 +1552,10 @@ input {
     /* KATALOG - END */
 }
 
+@media screen and (max-width: 330px){
+    .modal-panel__menu {
+    width: 230px;
+    }
+}
+
 /* MEDIA - START */
