@@ -192,7 +192,11 @@ input {
     top: 0;
     right: -100px;
     transition: all 0.3s ease-in-out;
-    padding: 5px 15px;
+    padding: 15px 17px;
+}
+
+.modal-panel__menu path{
+    fill: white;
 }
 
 .modal-menu.open .modal-panel__menu{
@@ -203,6 +207,7 @@ input {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 10px;
 }
 
 
@@ -212,6 +217,7 @@ input {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #1B99E0;
 }
 
 .modal-button__close:hover path{
